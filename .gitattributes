@@ -1,0 +1,7 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+# Ignore .nsi files (for GM:S 1 projects)
+*.nsi linguist-vendored
+
+# Ignore .yy files (for GMS 2 projects)
+*.yy linguist-vendored
