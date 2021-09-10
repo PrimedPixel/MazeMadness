@@ -1,2 +1,0 @@
-/// @desc
-target = noone;
