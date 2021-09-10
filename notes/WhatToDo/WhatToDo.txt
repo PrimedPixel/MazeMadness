@@ -1,4 +1,0 @@
-To Do List for Maze Madness
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-- Fix powerup timers displaying incorrectly for player 3 and 4
-- Player shadow displays incorrectly when frozen
