@@ -38,3 +38,5 @@ if gamepad_is_connected(controller)
 }
 
 //please let this note let me commit to git
+//this note deleted the entire project
+//fuck this note
