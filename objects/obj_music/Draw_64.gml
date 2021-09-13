@@ -5,7 +5,7 @@ if audio_sound_get_track_position(audio) < 15
 	
 	if variable_global_exists("players")
 	{
-		if global.players >= 3
+		if global.players >= 3 && (room != rm_menu || room != rm_controls)
 		{
 			yy = display_get_gui_height() / 2;	
 		}
