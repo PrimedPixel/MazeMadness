@@ -13,13 +13,25 @@ for (var i = 1; i <= global.players; i++)
 var _w = window_get_width();
 var _h = window_get_height();
 
-if global.players <= 2
+if global.players == 1
+{
+	//Reset the player 1 view to fullscreen
+	view_wport[0] = _w;
+	view_hport[0] = _h;
+	camera_set_view_size(view_camera[0], 320, 180);
+	
+	//Disable all other views
+	view_visible[1] = false;
+	view_visible[2] = false;
+	view_visible[3] = false;
+}
+else if global.players <= 2
 {
 	// Set up camera for view[0] (player 1)
-	view_wport[0] = _w / 2; // We want the window to be 960x540 so set the view port to half the width
+	view_wport[0] = _w / 2;
 
 	// Set up camera for view[1] (player 2)
-	view_xport[1] = _w / 2; // Offset the second view for player two within the game window
+	view_xport[1] = _w / 2; // Offset the second view
 	view_wport[1] = _w / 2;
 	
 	//And we need to remove the other two ports
@@ -29,7 +41,7 @@ if global.players <= 2
 else
 {
 	// Set up camera for view[0] (player 1)
-	view_wport[0] = _w / 2; // We want the window to be something similar to 960x540 so set the view port to half the width
+	view_wport[0] = _w / 2;
 	view_hport[0] = _h / 2;
 
 	// Set up camera for view[1] (player 2)

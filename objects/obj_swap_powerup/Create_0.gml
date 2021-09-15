@@ -1,4 +1,9 @@
 /// @desc
+if global.timetrial
+{
+	instance_destroy();	
+}
+
 target = noone;
 
 if place_meeting(x, y, obj_swap_powerup)

@@ -231,10 +231,10 @@ ds_menu_controls = create_menu_page(
 
 ds_menu_play_settings = create_menu_page(
 	["Players", menu_element_type.shift,		   change_players,		load_players(),				 ["1", "2", "3", "4"]],
-	["Rounds", menu_element_type.shift,			   change_rounds,		load_rounds(),				 ["25", "50", "75", "100", "Infinite"]],
+	["Rounds", menu_element_type.shift,			   change_rounds,		load_rounds(),				 ["10", "25", "30", "40", "50", "60", "75", "80", "90", "100", "Infinite"]],
 	["Enemies", menu_element_type.shift,		   change_enemies,		global.enemy_max,			 ["None", "1", "2", "3", "4", "5"]],
-	["Enemy Speed", menu_element_type.shift,	   change_enemy_speed,  load_enemy_speed(),			 ["Normal", "Speedy", "Speed of Sound", "Speed of Light", "Death", "Literally Hell"]],
-	["Max Player Speed", menu_element_type.shift,  change_player_speed, load_player_speed(),		 ["Normal", "Speedy", "Speed of Sound", "Speed of Light", "Death", "Literally Hell"]],
+	["Enemy Speed", menu_element_type.shift,	   change_enemy_speed,  load_enemy_speed(),			 ["Normal", "Speedy", "Speed of Sound", "Speed of Light", "Death", "NIGHTMARE"]],
+	["Max Player Speed", menu_element_type.shift,  change_player_speed, load_player_speed(),		 ["Normal", "Speedy", "Speed of Sound", "Speed of Light", "Death", "NIGHTMARE"]],
 	["Powerup Mode", menu_element_type.toggle,     change_random_powerup,  global.random_powerup,    ["Normal", "Random"]],
 	["Seed",  menu_element_type.type_num_only,			"seed", global.seed],
 	["Start", menu_element_type.script_runner,	   start_game],
@@ -257,13 +257,6 @@ ds_menu_items = create_menu_page(
 	["Back", menu_element_type.page_transfer, menu_page.main]
 );
 
-//ds_menu_colours = create_menu_page(
-//	["Player 1 Hue",	menu_element_type.slider, change_player_1_hue, global.player_hue[0],	[0, 6]],
-//	["Player 2 Hue",	menu_element_type.slider, change_player_2_hue, global.player_hue[1], [0, 6]],
-
-//	["Back", menu_element_type.page_transfer, menu_page.settings]
-//);
-
 if gamepad_is_connected(0)
 {
 	ds_menu_gamepad_controls = create_menu_page(
@@ -284,7 +277,7 @@ else
 	menu_pages = [ds_menu_main, ds_menu_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls, ds_menu_play_settings, ds_menu_items];
 }
 
-var array_len = array_length_1d(menu_pages);
+var array_len = array_length(menu_pages);
 for (var i = 0; i < array_len; i++)
 {
 	menu_option[i] = 0;

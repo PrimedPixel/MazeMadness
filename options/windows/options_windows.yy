@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Maze Madness",
   "option_windows_executable_name": "Maze Madness",
-  "option_windows_version": "1.3.0.4",
+  "option_windows_version": "1.4.0.0",
   "option_windows_company_info": "Primed Pixel Games",
   "option_windows_product_info": "Maze Madness",
   "option_windows_copyright_info": "(c) 2020 - 2021 Primed Pixel Games",

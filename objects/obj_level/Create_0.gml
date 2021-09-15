@@ -106,14 +106,7 @@ for (var i = 1; i <= global.players; i++)
 	instance_create_layer(player_start_x, player_start_y, "Instances", obj);
 }
 
-if !global.timetrial
-{
-	instance_create_layer(player_start_x, player_start_y, "Instances", obj_camera);
-}
-else
-{
-	instance_create_layer(player_start_x, player_start_y, "Instances", obj_camera_tt);
-}
+instance_create_layer(player_start_x, player_start_y, "Instances", obj_camera);
 
 var controller_direction = irandom(3);
 var steps = 388 + (12 * global.level);

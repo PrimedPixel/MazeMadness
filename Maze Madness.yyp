@@ -1,7 +1,6 @@
 {
   "resources": [
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},"order":0,},
-    {"id":{"name":"obj_camera_tt","path":"objects/obj_camera_tt/obj_camera_tt.yy",},"order":9,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":7,},
     {"id":{"name":"rm_controls","path":"rooms/rm_controls/rm_controls.yy",},"order":6,},
     {"id":{"name":"tspr_wall","path":"sprites/tspr_wall/tspr_wall.yy",},"order":1,},
@@ -65,6 +64,7 @@
     {"id":{"name":"ts_grass","path":"tilesets/ts_grass/ts_grass.yy",},"order":3,},
     {"id":{"name":"load_players","path":"scripts/load_players/load_players.yy",},"order":7,},
     {"id":{"name":"ts_snow","path":"tilesets/ts_snow/ts_snow.yy",},"order":4,},
+    {"id":{"name":"MenuChange","path":"scripts/MenuChange/MenuChange.yy",},"order":22,},
     {"id":{"name":"ts_forest","path":"tilesets/ts_forest/ts_forest.yy",},"order":5,},
     {"id":{"name":"ts_sand","path":"tilesets/ts_sand/ts_sand.yy",},"order":6,},
     {"id":{"name":"ts_autumn","path":"tilesets/ts_autumn/ts_autumn.yy",},"order":7,},

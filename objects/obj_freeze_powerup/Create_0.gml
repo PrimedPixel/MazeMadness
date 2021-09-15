@@ -1,4 +1,8 @@
 /// @desc
+if global.timetrial
+{
+	instance_destroy();	
+}
 
 // Inherit the parent event
 event_inherited();

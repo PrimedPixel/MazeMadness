@@ -1,11 +1,11 @@
 /// @desc
 if audio_sound_get_track_position(audio) < 15
 {
-	var yy = display_get_gui_height;
+	var yy = display_get_gui_height();
 	
 	if variable_global_exists("players")
 	{
-		if global.players >= 3 && (room != rm_menu || room != rm_controls)
+		if global.players >= 3 && room == rm_1
 		{
 			yy = display_get_gui_height() / 2;	
 		}

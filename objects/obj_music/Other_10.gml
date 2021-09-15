@@ -35,46 +35,46 @@ switch mus
 		mus_str = "Voice Over Under - Kevin MacLeod";
 		break;
 	case mus_4:
-		mus_str = "Sweet Chaos - Malachy Tun / Primed Pixel";
+		mus_str = "Sweet Chaos - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_5:
 		mus_str = "Mega Hyper Ultrastorm - Kevin MacLeod";
 		break;
 	case mus_6:
-		mus_str = "Time is of the Essence - Malachy Tun / Primed Pixel";
+		mus_str = "Time is of the Essence - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_7:
-		mus_str = "Digital Chips - Malachy Tun / Primed Pixel"
+		mus_str = "Digital Chips - Malachy Moran-Tun / Primed Pixel"
 		break;
 	case mus_8:
-		mus_str = "Orange Moon - Malachy Tun / Primed Pixel";
+		mus_str = "Orange Moon - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_9:
-		mus_str = "Uranus - Malachy Tun / Primed Pixel";
+		mus_str = "Uranus - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_10:
-		mus_str = "Aggressive Tomato - Malachy Tun / Primed Pixel";
+		mus_str = "Aggressive Tomato - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_11:
-		mus_str = "Shiny Eggs - Malachy Tun / Primed Pixel";
+		mus_str = "Shiny Eggs - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_12:
-		mus_str = "Mercury Memory - Malachy Tun / Primed Pixel";
+		mus_str = "Mercury Memory - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_13:
-		mus_str = "Purple Mangoes - Malachy Tun / Primed Pixel";
+		mus_str = "Purple Mangoes - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_14:
-		mus_str = "Space Cows - Malachy Tun / Primed Pixel";
+		mus_str = "Space Cows - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_15:
-		mus_str = "Electric Diamond - Malachy Tun / Primed Pixel";
+		mus_str = "Electric Diamond - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_16:
-		mus_str = "Warm Danger - Malachy Tun / Primed Pixel";
+		mus_str = "Warm Danger - Malachy Moran-Tun / Primed Pixel";
 		break;
 	case mus_17:
-		mus_str = "Pink Puppy - Malachy Tun / Primed Pixel";
+		mus_str = "Pink Puppy - Malachy Moran-Tun / Primed Pixel";
 		break;
 }
 

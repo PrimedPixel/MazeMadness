@@ -17,4 +17,4 @@ draw_rectangle(x + (48 * alignment), square_y - 2, x + (52 * alignment), square_
 
 draw_set_halign(alignment == 1 ? fa_left : fa_right);
 draw_set_valign(fa_center);
-draw_text(x + (55 * alignment), y_centre, string(floor((global.player_hue[player_num] / 6.5) * 100)));
+draw_text(x + (55 * alignment), y_centre, "Hue:\n" + string(floor((global.player_hue[player_num] / 6.5) * 100)));

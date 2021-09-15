@@ -5,7 +5,7 @@ if arrow
 	draw_sprite_ext(spr_arrow, 0, x, y, image_xscale, image_yscale, point_direction(x, y, obj_door.x + 12, obj_door.y + 16) + 270, image_blend, image_alpha);
 }
 
-if frozen
+if sprite_index == spr_player_frozen
 {
 	draw_sprite_ext(spr_frozen_shadow, 0, x, y+1, 1, -0.75, 0, c_white, 0.5);
 }
