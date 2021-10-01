@@ -22,5 +22,3 @@ obj_vibrate.controller[target.player_num] = 5;
 obj_vibrate.intensity = 0.5;
 
 audio_play_sound(snd_teleport, 0, false);
-
-instance_destroy();

@@ -9,6 +9,15 @@ function powerup_and_stuff(ds_list_id)
 		arrow = false;
 		invis = false;
 		reversed = false;
+		
+		if global.cheat[4] { arrow = true; }
+		if global.cheat[5]
+		{
+			move_x *= -1;
+			move_y *= -1;
+			reversed = true; 
+		}
+		if global.cheat[6] { max_speed = global.max_speed * 2;}
 	}
 	
 	//Checks every powerup

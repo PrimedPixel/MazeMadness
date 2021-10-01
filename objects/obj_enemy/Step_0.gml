@@ -1,15 +1,5 @@
 /// @desc
-if alarm[0] <= 0
-{
-	if !global.timetrial
-	{
-		inst = instance_nearest(x, y, par_player);
-	}
-	else
-	{
-		inst = obj_player_1;
-	}
-}
+inst = instance_nearest(x, y, par_player);
 
 if !instance_exists(inst)
 {
@@ -44,7 +34,7 @@ if !global.timetrial
 	{
 		while inst.invis
 		{
-			inst = asset_get_index("obj_player_" + string(wrap(real(string_char_at(object_get_name(inst.object_index), 12)) + 1, 1, 4)));
+			inst = asset_get_index("obj_player_" + string(wrap(real(string_char_at(object_get_name(inst.object_index), 12)) + 1, 1, global.players)));
 		}
 	}
 }

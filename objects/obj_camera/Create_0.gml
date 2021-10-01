@@ -73,3 +73,5 @@ var _dx = display_get_width() / 2;
 var _dy = display_get_height() / 2;
 window_set_rectangle(_dx - (_w / 2), _dy - (_h / 2), _w, _h);
 surface_resize(application_surface, _w, _h);
+
+darkness_lay_id = layer_get_id("Darkness");

@@ -16,3 +16,8 @@ for (var i = 1; i <= global.players; i++)
 	
 	camera_set_view_pos(view_camera[i - 1], xx[i - 1] - (width * 0.5), yy[i - 1] - (height * 0.5));
 }
+
+if layer_get_visible(darkness_lay_id) != global.cheat[7]
+{
+	layer_set_visible(darkness_lay_id, global.cheat[7])
+}

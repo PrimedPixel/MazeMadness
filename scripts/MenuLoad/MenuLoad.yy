@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Change",
-    "path": "folders/Scripts/Menu/Change.yy",
+    "name": "Load",
+    "path": "folders/Scripts/Menu/Load.yy",
   },
   "resourceVersion": "1.0",
-  "name": "change_reverse",
+  "name": "MenuLoad",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -86,6 +86,9 @@ if !variable_global_exists("key_enter")
 	global.cheat[1] = false;
 	global.cheat[2] = false;
 	global.cheat[3] = false;
+	global.cheat[4] = false;
+	global.cheat[5] = false;
+	global.cheat[6] = false;
 
 	//Items
 	global.speed_max =		ini_read_real("Items", "Speed",		   3);
