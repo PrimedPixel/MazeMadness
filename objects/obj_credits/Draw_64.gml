@@ -28,6 +28,8 @@ text_block("Spritework", "Kenney", "https://www.kenney.nl");
 text_block("", "Heartbeast", "https://www.heartgamedev.com/");
 text_block("", "Malachy Moran-Tun", "https://primedpixel.co.uk");
 
+text_block("Font", "Andrew Tyler", "PixelMix\nhttps://andrewtyler.net");
+
 text_block("Original Idea", "Justin Tun", "");
 
 text_block("Music", "Kevin MacLeod", "The Lift\nFurious Freak\nVoice Over Under\nMega Hyper Ultrastorm\nhttps://incompetech.com\nhttps://filmmusic.io\nLicense: CC BY http://creativecommons.org/licenses/by/4.0/");

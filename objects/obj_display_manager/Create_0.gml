@@ -1,5 +1,6 @@
 /// @desc
 
+// Game window 320 x 180
 //Height = 180
 
 ideal_width = 0;

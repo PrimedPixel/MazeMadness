@@ -1,8 +1,8 @@
 /// @description Wrap(value, min, max)
 /// @function Wrap
-/// @args value
-/// @args min
-/// @args max
+/// @param value
+/// @param min
+/// @param max
 function wrap(value, minimum, maximum) {
 	// Returns the value wrapped, values over or under will be wrapped around
 

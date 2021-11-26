@@ -21,4 +21,6 @@ ani.target = target;
 obj_vibrate.controller[target.player_num] = 5;
 obj_vibrate.intensity = 0.5;
 
+inst = asset_get_index("obj_player_" + string(irandom_range(1, global.players)));
+
 audio_play_sound(snd_teleport, 0, false);

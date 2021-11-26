@@ -215,3 +215,15 @@ if alarm[0] > 0
 {
 	logo_y = lerp(logo_y, -sprite_get_height(spr_logo) * 2, 0.05);
 }
+
+if global.preset_name_prev != global.preset_name && input_enter
+{
+	save_preset();
+	
+	instance_destroy(obj_menu);
+	var inst = instance_create_layer(0, 0, "Instances", obj_menu);
+	inst.page = 5;
+	inst.logo_y = -16;
+	
+	global.preset_name_prev = global.preset_name;
+}

@@ -12,6 +12,7 @@ logo_x = 160;
 logo_y = 16;
 stick_move_v = false;
 stick_move_h = false;
+menu_pages[0] = -1;
 
 //Themes
 enum theme
@@ -74,34 +75,9 @@ if !variable_global_exists("key_enter")
 	global.key_left[3] =  ini_read_real("Player 4 Controls", "Left",  vk_numpad4);
 	global.key_right[3] = ini_read_real("Player 4 Controls", "Right", vk_numpad6);
 	global.key_down[3] =  ini_read_real("Player 4 Controls", "Down",  vk_numpad5);
-	global.key_start[3] = ini_read_real("Player 1 Controls", "Start",  vk_add);
+	global.key_start[3] = ini_read_real("Player 1 Controls", "Start",  vk_ralt);
 
-	//Gameplay Options
-	global.enemy_max =	 ini_read_real("Gameplay", "Enemy Max",   2);
-	global.max_rounds =	 ini_read_real("Gameplay", "Max Rounds",  25);
-	global.enemy_speed = ini_read_real("Gameplay", "Enemy Speed", 1);
-	global.max_speed =	 ini_read_real("Gameplay", "Max Player Speed", 2);
-	global.players =	 ini_read_real("Gameplay", "Players", 4);
-	global.cheat[0] = false;
-	global.cheat[1] = false;
-	global.cheat[2] = false;
-	global.cheat[3] = false;
-	global.cheat[4] = false;
-	global.cheat[5] = false;
-	global.cheat[6] = false;
-
-	//Items
-	global.speed_max =		ini_read_real("Items", "Speed",		   3);
-	global.freeze_max =		ini_read_real("Items", "Freeze",	   2);
-	global.swap_max =		ini_read_real("Items", "Swap",		   2);
-	global.teleport_max =	ini_read_real("Items", "Teleport",	   0);
-	global.reverse_max =	ini_read_real("Items", "Reverse",	   2);
-	global.no_enemy_max =	ini_read_real("Items", "Enemy Freeze", 2);
-	global.arrow_max =		ini_read_real("Items", "Arrow",		   1);
-	global.camera_max =		ini_read_real("Items", "Camera",	   2);
-	global.invis_max =		ini_read_real("Items", "Invisible",	   2);
-	global.random_powerup = ini_read_real("Items", "Random",	   0);
-
+	//Other Options
 	global.rm_width = 1024;
 	global.rm_height = 1024;
 
@@ -122,9 +98,9 @@ if !variable_global_exists("key_enter")
 	var gui_scale = ini_read_real("Graphics", "GUI Scale", 2);
 
 	display_set_gui_size(dm_width * (gui_scale + 1), dm_height * (gui_scale + 1));
-
+	
 	ini_close();
-
+	
 	if !variable_global_exists("seed")
 	{
 		global.seed = "Random";
@@ -145,6 +121,44 @@ if !variable_global_exists("key_enter")
 		global.player_hue[i] = 0;
 	}
 }
+
+ini_open("save.primedpixel");
+global.preset = ini_read_real("Gameplay", "Preset", 1);
+ini_close();
+	
+ini_open("preset" + string(global.preset) + ".primedpixel");
+
+global.preset_name = ini_read_string("Name", "Name", string(global.preset));
+global.preset_name_prev = global.preset_name;
+
+//Gameplay Options
+global.enemy_max =	 ini_read_real("Gameplay", "Enemy Max",   2);
+global.max_rounds =	 ini_read_real("Gameplay", "Max Rounds",  25);
+global.enemy_speed = ini_read_real("Gameplay", "Enemy Speed", 1);
+global.max_speed =	 ini_read_real("Gameplay", "Max Player Speed", 2);
+global.players =	 ini_read_real("Gameplay", "Players", 4);
+global.cheat[0] = false;
+global.cheat[1] = false;
+global.cheat[2] = false;
+global.cheat[3] = false;
+global.cheat[4] = false;
+global.cheat[5] = false;
+global.cheat[6] = false;
+global.cheat[7] = false;
+
+//Items
+global.speed_max =		ini_read_real("Items", "Speed",		   3);
+global.freeze_max =		ini_read_real("Items", "Freeze",	   2);
+global.swap_max =		ini_read_real("Items", "Swap",		   2);
+global.teleport_max =	ini_read_real("Items", "Teleport",	   0);
+global.reverse_max =	ini_read_real("Items", "Reverse",	   2);
+global.no_enemy_max =	ini_read_real("Items", "Enemy Freeze", 2);
+global.arrow_max =		ini_read_real("Items", "Arrow",		   1);
+global.camera_max =		ini_read_real("Items", "Camera",	   2);
+global.invis_max =		ini_read_real("Items", "Invisible",	   2);
+global.random_powerup = ini_read_real("Items", "Random",	   0);
+	
+ini_close();
 
 global.level = 1;
 
@@ -232,7 +246,27 @@ ds_menu_controls = create_menu_page(
 	["Back", menu_element_type.page_transfer, menu_page.settings]
 );
 
+if !file_exists("preset1.primedpixel")
+{
+	ini_open("preset1.primedpixel");
+	ini_write_string("hopefully", "you", "shouldn't see this");
+	ini_close();
+}
+
+var max_preset = 1;
+var presets = [];
+while file_exists("preset" + string(max_preset) + ".primedpixel")
+{
+	ini_open("preset" + string(max_preset) + ".primedpixel");
+	array_push(presets, ini_read_string("Name", "Name", string(max_preset)));
+	max_preset++;
+}
+
+array_push(presets, string(max_preset));
+
 ds_menu_play_settings = create_menu_page(
+	["Game Preset", menu_element_type.shift,	   change_preset,       global.preset - 1,			 presets],
+	["Preset Name", menu_element_type.type,		   "preset_name",		global.preset_name],
 	["Players", menu_element_type.shift,		   change_players,		load_players(),				 ["1", "2", "3", "4"]],
 	["Rounds", menu_element_type.shift,			   change_rounds,		load_rounds(),				 ["10", "25", "30", "40", "50", "60", "75", "80", "90", "100", "Infinite"]],
 	["Enemies", menu_element_type.shift,		   change_enemies,		global.enemy_max,			 ["None", "1", "2", "3", "4", "5"]],

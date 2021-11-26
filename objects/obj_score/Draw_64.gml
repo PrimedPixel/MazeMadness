@@ -33,7 +33,7 @@ if completed
 	
 	var winning_num = array_length(winning_players);
 	var winning_coords;
-	var player_spr_height = sprite_get_height(spr_player_1);
+	//var player_spr_height = sprite_get_height(spr_player_1);
 	
 	for (var i = 0; i <= winning_num - 1; i++)
 	{

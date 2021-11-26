@@ -1,5 +1,5 @@
 To Do List for Maze Madness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 - Fix powerup timers displaying incorrectly for player 3 and 4
-- >> Enemies to lock on to different player if near eachother <<
 - Darkness cheatcode, similar to SMM2, perhaps make game option?
+- Fix 1366x768 Resolutions

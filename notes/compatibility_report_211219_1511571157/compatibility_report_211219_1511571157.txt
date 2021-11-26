@@ -1,3 +1,0 @@
-Converting GML script: ${project_dir}\objects\o_shader_start\Step_0.gml
-Converted string - line 1: 'Q' -> "Q"
-Converted string - line 5: 'W' -> "W"

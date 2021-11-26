@@ -60,7 +60,7 @@ function powerup_and_stuff(ds_list_id)
 		
 			case powerup.invisible:
 				invis = true;
-				sprite_index = spr_eyes;
+				sprite_index = invis_sprite;
 				break;
 		
 			default:

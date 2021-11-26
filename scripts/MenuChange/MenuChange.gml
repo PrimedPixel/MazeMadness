@@ -152,6 +152,22 @@ function change_intensity(selection)
 
 #region Game Settings
 
+function change_preset(count)
+{
+	save_preset();
+	
+	global.preset = count + 1;
+	
+	ini_open("save.primedpixel");
+	ini_write_real("Gameplay", "Preset", global.preset);
+	ini_close();
+	
+	instance_destroy(obj_menu);
+	var inst = instance_create_layer(0, 0, "Instances", obj_menu);
+	inst.page = 5;
+	inst.logo_y = -16;
+}
+
 function change_enemy_speed(selection)
 {
 	switch selection
