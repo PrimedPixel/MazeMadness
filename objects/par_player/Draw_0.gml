@@ -37,7 +37,7 @@ if global.cheat[3]
 	hue += 0.01;
 }
 
-if (current_month == 12 && current_day >= 13) || (current_month == 1 && current_day <= 6)
+if (current_month == 12 && current_day >= 1) || (current_month == 1 && current_day <= 6)
 {
 	if !reversed
 	{
