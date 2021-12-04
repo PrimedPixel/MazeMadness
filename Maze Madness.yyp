@@ -100,6 +100,7 @@
     {"id":{"name":"snd_reverse","path":"sounds/snd_reverse/snd_reverse.yy",},"order":3,},
     {"id":{"name":"snd_freeze","path":"sounds/snd_freeze/snd_freeze.yy",},"order":4,},
     {"id":{"name":"snd_enemy_freeze","path":"sounds/snd_enemy_freeze/snd_enemy_freeze.yy",},"order":5,},
+    {"id":{"name":"teleport_player","path":"scripts/teleport_player/teleport_player.yy",},"order":12,},
     {"id":{"name":"snd_screen_swap","path":"sounds/snd_screen_swap/snd_screen_swap.yy",},"order":6,},
     {"id":{"name":"snd_arrow","path":"sounds/snd_arrow/snd_arrow.yy",},"order":7,},
     {"id":{"name":"snd_door","path":"sounds/snd_door/snd_door.yy",},"order":8,},

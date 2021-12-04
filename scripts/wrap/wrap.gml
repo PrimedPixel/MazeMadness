@@ -1,5 +1,5 @@
-/// @description Wrap(value, min, max)
-/// @function Wrap
+/// @desc wrap(value, min, max)
+/// @function wrap(value, min, max)
 /// @param value
 /// @param min
 /// @param max
