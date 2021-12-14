@@ -140,7 +140,7 @@ for (yy = 0; yy < ds_height; yy++)
 				left_shift = "";
 			}
 			
-			if current_val == array_length_1d(ds_grid[# 4, yy]) - 1
+			if current_val == array_length(ds_grid[# 4, yy]) - 1
 			{
 				right_shift = "";
 			}

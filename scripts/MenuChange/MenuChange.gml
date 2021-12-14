@@ -88,7 +88,7 @@ function change_resolution(selection)
 			break;
 	}
 
-	obj_display_manager.alarm[1] = 1;
+	obj_display_manager.alarm[1] = 1;	//run the create event
 }
 
 function change_window_mode(selection)

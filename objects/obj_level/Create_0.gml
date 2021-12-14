@@ -199,33 +199,33 @@ for (var i = 1; i < steps; i++)
 		instance_create_layer(controller_x * CELL_WIDTH, controller_y * CELL_HEIGHT, "Instances", obj_door);
 	}
 	
-	var array_speed = array_length_1d(speed_powerup);
+	var array_speed = array_length(speed_powerup);
 	create_powerup(array_speed, speed_powerup, obj_speed_powerup, i, controller_x, controller_y);
 	
-	var array_swap = array_length_1d(swap_powerup);
+	var array_swap = array_length(swap_powerup);
 	create_powerup(array_swap, swap_powerup, obj_swap_powerup, i, controller_x, controller_y);
 	
-	var array_freeze = array_length_1d(freeze_powerup);
+	var array_freeze = array_length(freeze_powerup);
 	create_powerup(array_freeze, freeze_powerup, obj_freeze_powerup, i, controller_x, controller_y);
 	
-	var array_teleport = array_length_1d(teleport_powerup);
+	var array_teleport = array_length(teleport_powerup);
 	create_powerup(array_teleport, teleport_powerup, obj_teleport_powerup, i, controller_x, controller_y);
 	
-	var array_reverse = array_length_1d(reverse_controls_powerup);
+	var array_reverse = array_length(reverse_controls_powerup);
 	create_powerup(array_reverse, reverse_controls_powerup, obj_reverse_controls_powerup, i, controller_x, controller_y);
 	
-	var array_arrow = array_length_1d(arrow_powerup);
+	var array_arrow = array_length(arrow_powerup);
 	create_powerup(array_arrow, arrow_powerup, obj_arrow_powerup, i, controller_x, controller_y);
 	
-	var array_camera = array_length_1d(camera_powerup);
+	var array_camera = array_length(camera_powerup);
 	create_powerup(array_camera, camera_powerup, obj_screen_swap, i, controller_x, controller_y);
 	
-	var array_invis = array_length_1d(invis_powerup);
+	var array_invis = array_length(invis_powerup);
 	create_powerup(array_invis, invis_powerup, obj_invisible, i, controller_x, controller_y);
 	
 	if global.enemy_max > 0
 	{	
-		var array_enemy = array_length_1d(enemy_position);
+		var array_enemy = array_length(enemy_position);
 		for (var j = 0; j < array_enemy; j++)
 		{
 			if i == enemy_position[j]
@@ -234,7 +234,7 @@ for (var i = 1; i < steps; i++)
 			}
 		}
 	
-		var array_no_enemy = array_length_1d(no_enemy_powerup);
+		var array_no_enemy = array_length(no_enemy_powerup);
 		create_powerup(array_no_enemy, no_enemy_powerup, obj_no_enemy_powerup, i, controller_x, controller_y);
 	}
 	

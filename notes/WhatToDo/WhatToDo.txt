@@ -1,5 +1,10 @@
 To Do List for Maze Madness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-- Fix powerup timers displaying incorrectly for player 3 and 4
+- Reorganise obj_score / GUI code
+	- Fix powerup timers displaying incorrectly for player 3 and 4
 - Darkness cheatcode, similar to SMM2, perhaps make game option?
 - Fix 1366x768 Resolutions
+	- Integer scaling method instead of resizing cameras?
+	  i.e., 1280x720 with black box?
+- Try VSync options in GMS2
+- Update icon for v1.4

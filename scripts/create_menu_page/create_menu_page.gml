@@ -15,7 +15,7 @@ function create_menu_page() {
 	for (i = 0; i < argument_count; i++)
 	{
 		var array = arg[i];
-		var array_len = array_length_1d(array);
+		var array_len = array_length(array);
 	
 		for (var xx = 0; xx < array_len; xx++)
 		{

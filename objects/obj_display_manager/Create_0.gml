@@ -21,19 +21,19 @@ else
 
 aspect_ratio = saved_width / saved_height;
 
-ideal_width = round(ideal_height * aspect_ratio);
+ideal_width = floor(ideal_height * aspect_ratio);
 show_debug_message(ideal_width);
 
 //Perfect Pixel Scaling
 if saved_width mod ideal_width != 0
 {
-	var d = round(saved_width / ideal_width);	
+	var d = floor(saved_width / ideal_width);	
 	ideal_width = saved_width / d;
 }
 
 if saved_height mod ideal_height != 0
 {
-	var d = round(saved_height / ideal_height);
+	var d = floor(saved_height / ideal_height);
 	ideal_height = saved_height / d;
 }
 
@@ -44,12 +44,12 @@ if frac(ideal_width) == 0.5
 }
 
 //Check for odd numbers
-if ideal_width & 1
+if ideal_width % 2 == 1
 {
 	ideal_width++;	
 }
 
-if ideal_height & 1
+if ideal_height % 2 == 1
 {
 	ideal_height++;
 }
