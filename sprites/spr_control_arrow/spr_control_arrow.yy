@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"d8179ecd-1438-4e1a-ace4-0aaf453dadca","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"d8179ecd-1438-4e1a-ace4-0aaf453dadca","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"LayerId":{"name":"eee08907-8bb1-41c0-b428-3b2c509ef637","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"d8179ecd-1438-4e1a-ace4-0aaf453dadca","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"LayerId":{"name":"91fc05de-87e4-4f4e-b400-7410e343d912","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_control_arrow","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"resourceVersion":"1.0","name":"d8179ecd-1438-4e1a-ace4-0aaf453dadca","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -43,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"df96e93a-04a2-4d64-b989-12f634171925","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8179ecd-1438-4e1a-ace4-0aaf453dadca","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -60,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_control_arrow","path":"sprites/spr_control_arrow/spr_control_arrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_control_arrow",
     "tags": [],
     "resourceType": "GMSequence",

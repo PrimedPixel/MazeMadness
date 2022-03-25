@@ -25,7 +25,6 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"8402cc66-7d28-447e-a00a-741addb43fa3","path":"sprites/spr_controller/spr_controller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8402cc66-7d28-447e-a00a-741addb43fa3","path":"sprites/spr_controller/spr_controller.yy",},"LayerId":{"name":"ec81935c-90f4-4cda-9d76-7ee3c60ffc72","path":"sprites/spr_controller/spr_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"8402cc66-7d28-447e-a00a-741addb43fa3","path":"sprites/spr_controller/spr_controller.yy",},"LayerId":{"name":"ab29337d-4541-4961-b1be-e62da2427ad7","path":"sprites/spr_controller/spr_controller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_controller","path":"sprites/spr_controller/spr_controller.yy",},"resourceVersion":"1.0","name":"8402cc66-7d28-447e-a00a-741addb43fa3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -43,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"88cb7a26-30e3-4c1e-a0f4-b7f599d71569","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8402cc66-7d28-447e-a00a-741addb43fa3","path":"sprites/spr_controller/spr_controller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -60,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_controller","path":"sprites/spr_controller/spr_controller.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_controller",
     "tags": [],
     "resourceType": "GMSequence",

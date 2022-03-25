@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.25,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/ag_sounds",
   },
   "soundFile": "snd_enemy_freeze",
-  "duration": 0.364433,
+  "duration": 0.359433,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

@@ -1,5 +1,6 @@
 {
-  "compression": 0,
+  "conversionMode": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -11,7 +12,7 @@
     "path": "audiogroups/ag_music",
   },
   "soundFile": "mus_16",
-  "duration": 104.475,
+  "duration": 104.47,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

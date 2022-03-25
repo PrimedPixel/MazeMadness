@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.25,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/ag_sounds",
   },
   "soundFile": "snd_door",
-  "duration": 1.673526,
+  "duration": 1.668526,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

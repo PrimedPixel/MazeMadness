@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_primed_pixel",
-  "duration": 1.636202,
+  "duration": 1.631202,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",

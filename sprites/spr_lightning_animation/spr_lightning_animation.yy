@@ -28,7 +28,6 @@
         {"FrameId":{"name":"c62a1ca4-abe4-4d4a-b401-9ee7c5d870e3","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"LayerId":{"name":"9c09eac1-1d3a-4589-a275-35c60420d71f","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_lightning_animation","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","name":"c62a1ca4-abe4-4d4a-b401-9ee7c5d870e3","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"ace13d56-18ca-4e19-abc3-aa9a40ee87bf","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ace13d56-18ca-4e19-abc3-aa9a40ee87bf","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"LayerId":{"name":"604ee591-e2e5-47c1-ab0c-2bf8ada38f0e","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ace13d56-18ca-4e19-abc3-aa9a40ee87bf","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"LayerId":{"name":"9c09eac1-1d3a-4589-a275-35c60420d71f","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_lightning_animation","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","name":"ace13d56-18ca-4e19-abc3-aa9a40ee87bf","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e9689557-416f-44f6-9702-824559eb5aff","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
@@ -71,7 +70,7 @@
             {"id":"dc02302e-6df2-43c2-aa25-cae1518b1708","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f60f2c38-adae-48d4-b7b8-c60d7a19130a","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e147b25b-b646-4737-a5f7-637ccbc6b721","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8629a052-4068-48d7-a695-3290df150346","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"85eb7e01-bdf2-4906-8f8e-821ecafb2ec5","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a20dfe7-23e2-451d-a113-2f038d953256","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -88,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lightning_animation","path":"sprites/spr_lightning_animation/spr_lightning_animation.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lightning_animation",
     "tags": [],
     "resourceType": "GMSequence",

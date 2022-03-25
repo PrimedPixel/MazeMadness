@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/ag_music",
   },
   "soundFile": "mus_5",
-  "duration": 193.1544,
+  "duration": 193.1494,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/ag_sounds",
   },
   "soundFile": "snd_select",
-  "duration": 0.120011,
+  "duration": 0.115011,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds/Sounds.yy",
