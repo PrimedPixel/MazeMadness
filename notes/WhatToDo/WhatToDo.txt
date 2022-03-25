@@ -8,3 +8,4 @@ To Do List for Maze Madness
 	  i.e., 1280x720 with black box?
 - Try VSync options in GMS2
 - Update icon for v1.4
+- Zoom out for 3-4 player mode

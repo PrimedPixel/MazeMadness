@@ -2,7 +2,6 @@
 #region Variables
 
 reversed = false;
-frozen = false;
 hsp = 0;
 vsp = 0;
 max_speed = global.max_speed;

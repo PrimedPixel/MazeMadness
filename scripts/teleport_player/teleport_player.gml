@@ -7,10 +7,37 @@ function teleport_player(target)
 	var yy = irandom_range(1, height);
 	
 	//Iterate through the level tiles, starting from the initial random
-	while obj_level.grid[# xx, yy] != FLOOR
+				//while obj_level.grid[# xx, yy] != FLOOR
+				//{
+				//	var xx = wrap(xx + 1, 1, width);
+				//	var yy = wrap(yy + 1, 1, height);
+				//}
+	
+	suitable = false;
+	for (var xxx = xx; xxx <= width; xxx++)
 	{
-		var xx = wrap(xx + 1, 1, width);
-		var yy = wrap(yy + 1, 1, height);
+		if obj_level.grid[# xx, yy] == FLOOR
+		{
+			suitable = true;
+		}
+		
+		if suitable
+		{
+			break;
+		}
+		
+		for (var yyy = yy; yyy <= height; yy++)
+		{
+			if obj_level.grid[# xx, yy] == FLOOR
+			{
+				suitable = true;
+			}
+		
+			if suitable
+			{
+				break;	
+			}
+		}
 	}
 
 	//Move player to available tile

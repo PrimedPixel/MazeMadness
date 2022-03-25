@@ -7,7 +7,7 @@
 ///@args controller_y
 function create_powerup(argument0, argument1, argument2, argument3, argument4, argument5) {
 
-	for (var j = 0; j < argument0; j++)
+	for (var j = 0; j < argument0 - 1; j++)
 	{
 		if argument3 == argument1[j]
 		{
