@@ -83,7 +83,7 @@ shadow_surface = noone;
 width = global.rm_width div CELL_WIDTH;
 height = global.rm_height div CELL_HEIGHT;
 grid = ds_grid_create(width, height);
-teleport_list = ds_list_create();
+teleport_list = [];
 global.enemy_grid = mp_grid_create(0, 0, width, height, CELL_WIDTH, CELL_HEIGHT);
 
 tilemap_set_width(layer_tilemap_get_id(layer_get_id("Wall_Tiles")), global.rm_width / 32);
@@ -240,7 +240,7 @@ for (var i = 1; i < steps; i++)
 	}
 	
 	grid[# controller_x, controller_y] = FLOOR;
-	ds_list_add(teleport_list, [controller_x, controller_y])
+	array_push(teleport_list, [controller_x, controller_y])
 	
 	if irandom(direction_change_odds) == direction_change_odds
 	{

@@ -43,9 +43,9 @@ function teleport_player(target)
 	//	}
 	//}
 	
-	var rand = irandom_range(0, ds_list_size(obj_level.teleport_list) - 1);
-	var xx = obj_level.teleport_list[| rand][0];
-	var yy = obj_level.teleport_list[| rand][1];
+	var rand = irandom_range(0, array_length(obj_level.teleport_list) - 1);
+	var xx = obj_level.teleport_list[rand][0];
+	var yy = obj_level.teleport_list[rand][1];
 	
 	//Move player to available tile
 	target.x = (xx * CELL_WIDTH) + 8;
