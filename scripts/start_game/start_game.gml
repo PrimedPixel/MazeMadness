@@ -11,4 +11,6 @@ function start_game()
 	transition(60, 30, c_black, rm_1);
 
 	global.seed_before = global.seed;
+	
+	save_game();
 }

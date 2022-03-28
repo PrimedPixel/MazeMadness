@@ -15,7 +15,7 @@ if menu_pages[page] == ds_menu_main
 
 if alarm[0] > 0
 {
-	start_y = lerp(start_y, room_height * 2.5, 0.025);
+	start_y = lerp(start_y, room_height * 2.5 * load_gui_scale(), 0.025);
 }
 else
 {

@@ -213,7 +213,7 @@ else
 
 if alarm[0] > 0
 {
-	logo_y = lerp(logo_y, -sprite_get_height(spr_logo) * 2, 0.05);
+	logo_y = lerp(logo_y, -sprite_get_height(spr_logo) * 2 * load_gui_scale(), 0.05);
 }
 
 if global.preset_name_prev != global.preset_name && input_enter
@@ -227,3 +227,20 @@ if global.preset_name_prev != global.preset_name && input_enter
 	
 	global.preset_name_prev = global.preset_name;
 }
+
+//Change background
+
+switch wrap(page, 0, 7)
+{
+	case 0: var spr = spr_floor break;
+	case 1:	var spr = spr_autumn break;
+	case 2:	var spr = spr_forest break;
+	case 3:	var spr = spr_cloud break;
+	case 4:	var spr = spr_grass break;
+	case 5:	var spr = spr_castle_floor break;
+	case 6:	var spr = spr_sand break;
+	case 7:	var spr = spr_snow break;
+	default: var spr = spr_floor; break;
+}
+
+layer_background_sprite(background_id, spr);

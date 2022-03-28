@@ -1,6 +1,7 @@
 /// @desc Initialize
 alarm[1] = 1;
 
+background_id = layer_background_get_id(layer_get_id("Background"));
 selected_x_offset = 0;
 line_y_buffer = 64;
 slider_accel = 0;
@@ -61,21 +62,21 @@ if !variable_global_exists("key_enter")
 	global.key_left[1] =  ini_read_real("Player 2 Controls", "Left",  vk_left);
 	global.key_right[1] = ini_read_real("Player 2 Controls", "Right", vk_right);
 	global.key_down[1] =  ini_read_real("Player 2 Controls", "Down",  vk_down);
-	global.key_start[1] = ini_read_real("Player 1 Controls", "Start",  vk_space);
+	global.key_start[1] = ini_read_real("Player 2 Controls", "Start",  vk_space);
 
 	//Player 3 Controls
 	global.key_up[2] =	  ini_read_real("Player 3 Controls", "Up",	  ord("I"));
 	global.key_left[2] =  ini_read_real("Player 3 Controls", "Left",  ord("J"));
 	global.key_right[2] = ini_read_real("Player 3 Controls", "Right", ord("L"));
 	global.key_down[2] =  ini_read_real("Player 3 Controls", "Down",  ord("K"));
-	global.key_start[2] = ini_read_real("Player 1 Controls", "Start",  ord("O"));
+	global.key_start[2] = ini_read_real("Player 3 Controls", "Start",  vk_backspace);
 
 	//Player 4 Controls
 	global.key_up[3] =	  ini_read_real("Player 4 Controls", "Up",	  vk_numpad8);
 	global.key_left[3] =  ini_read_real("Player 4 Controls", "Left",  vk_numpad4);
 	global.key_right[3] = ini_read_real("Player 4 Controls", "Right", vk_numpad6);
 	global.key_down[3] =  ini_read_real("Player 4 Controls", "Down",  vk_numpad5);
-	global.key_start[3] = ini_read_real("Player 1 Controls", "Start",  vk_ralt);
+	global.key_start[3] = ini_read_real("Player 4 Controls", "Start",  vk_ralt);
 
 	//Other Options
 	global.rm_width = 1024;

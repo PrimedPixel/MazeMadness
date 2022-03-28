@@ -10,4 +10,4 @@ if ds_map_exists(map, "gmt:is_server")
 	}
 }
 
-http_get("https://itch.io/api/1/x/wharf/latest?target=primedpixel/maze-madness&channel_name=win");
+http_get("https://itch.io/api/1/x/wharf/latest?target=primedpixel/mazemadness&channel_name=win");

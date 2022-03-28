@@ -2,7 +2,7 @@
 if version != -1 && version != GM_version
 {
 	//url_open("https://www.google.com"); doesn't work; chrome broke, use this magic bit of code instead
-	var _url = "https://primedpixel.itch.io/maze-madness";
+	var _url = "https://primedpixel.itch.io/mazemadness";
 	var _path = game_save_id + "/shortcut.url";
 	var _txt = file_text_open_write(_path);
 	// note: use '' instead of @'' in GMS1

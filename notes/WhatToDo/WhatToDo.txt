@@ -1,11 +1,17 @@
 To Do List for Maze Madness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+- Update icon for v1.4
+- Fix controllers
+- Save player 3 and 4 controls
+- Teleportation seems to be bugged (still)
+- Endscreen colours incorrect
+- Endscreen score changes alignment
+
+- Zoom out for 3-4 player mode
+- Try VSync options in GMS2
 - Reorganise obj_score / GUI code
 	- Fix powerup timers displaying incorrectly for player 3 and 4
 - Darkness cheatcode, similar to SMM2, perhaps make game option?
 - Fix 1366x768 Resolutions
 	- Integer scaling method instead of resizing cameras?
 	  i.e., 1280x720 with black box?
-- Try VSync options in GMS2
-- Update icon for v1.4
-- Zoom out for 3-4 player mode

@@ -22,6 +22,7 @@ move_y = 0;
 #endregion
 
 default_sprite = sprite_index;
+
 if global.controller[0] != -1 && array_length(global.controller) >= player_num
 {
 	controller = global.controller[player_num];

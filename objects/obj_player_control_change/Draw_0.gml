@@ -41,7 +41,4 @@ switch image_angle
 	default: halign = fa_center; valign = fa_middle; break;
 }
 
-draw_set_halign(halign);
-draw_set_valign(valign);
-draw_set_colour(c_white);
-draw_text(x + (x_buffer * 2), y + (y_buffer * 2), draw_str);
+draw_text_outline(x + (x_buffer * 2), y + (y_buffer * 2), draw_str, c_white, c_black, halign, valign, fnt_normal);

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Functions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "wrap",
+  "name": "save_game",
   "tags": [],
   "resourceType": "GMScript",
 }
